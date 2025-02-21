@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import './App.css'
 
 function App() {
   const [color, setColor] = useState("black")
   
   return (
-     <div className='w-full duration-200' 
+     <div className='w-100 duration-200 h-100vh' 
      style={{backgroundColor: color}}>
-      {/* <h2>hello</h2> */}
       <div className="fixed d-flex flex-wrap justify-center px-2">
-        <div className="flex flex-wrap justify-center g-4 shadow-lg bg-white px-3 py-3 rounded-2">
+        <div className="flex flex-wrap justify-center gap-4 shadow-lg bg-white px-3 py-3 rounded-2">
           <button
             onClick={() => setColor("red")}
             className='outline-none px-4 py-3 rounded-full text-white shadow-lg'
