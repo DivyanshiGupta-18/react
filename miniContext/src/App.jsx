@@ -1,9 +1,17 @@
+import './App.css'
+import Login from './components/Login'
+import Profile from './components/Profile'
+import UserContextProvider from './context/UserContextProvider'
+
 function App() {
+  
 
   return (
-    <>
-     <h1>Radhe Radhe</h1>
-    </>
+    <UserContextProvider>
+      <h1>Radhe radhe</h1>
+      <Login />
+      <Profile />
+    </UserContextProvider>
   )
 }
 
